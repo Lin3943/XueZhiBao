@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:gravity="center"
+              android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_find_recorded"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wangluozaixianfudao_0"
+            />
+        <LinearLayout
+            android:padding="@dimen/padding_2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/cp_alpha_gray"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="共"
+                android:textColor="#00f"
+                android:textSize="@dimen/text_size_16"/>
+            <TextView
+                android:id="@+id/tv_recorded_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:textColor="#00f"
+                android:textSize="@dimen/text_size_16"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="节"
+                android:textColor="#00f"
+                android:textSize="@dimen/text_size_16"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="@dimen/padding_2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="2018年高考冲刺讲座。"
+            android:textColor="#000"
+            android:textSize="@dimen/text_size_22"
+            />
+        <TextView
+            android:id="@+id/tv_recorded_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="2018-05-10"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_12"
+            />
+
+        <LinearLayout
+            android:padding="@dimen/padding_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="主讲："
+                android:textSize="@dimen/text_size_12"/>
+            <TextView
+                android:id="@+id/tv_recorded_speaker"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="辅道网"
+                android:textSize="@dimen/text_size_12"/>
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/doudou"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="200"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="180dp"
+              android:descendantFocusability="blocksDescendants"
+              android:gravity="center"
+              android:paddingTop="@dimen/padding_4"
+              android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        >
+
+        <ImageView
+
+            android:id="@+id/iv_find_recorded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xiaohui"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="@dimen/padding_2"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:paddingLeft="@dimen/padding_4"
+        android:paddingRight="@dimen/padding_4"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="翔安一中"
+            android:textColor="#000"
+            android:textSize="@dimen/text_size_22"
+            />
+        <LinearLayout
+            android:padding="@dimen/padding_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="口碑："
+                android:textSize="@dimen/text_size_12"/>
+
+            <TextView
+                android:id="@+id/tv_star_sum"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:textSize="@dimen/text_size_12"/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="星"
+                android:textSize="@dimen/text_size_12"/>
+            <!--<Space-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="match_parent"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:background="@drawable/doudou"-->
+                <!--/>-->
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/padding_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="直播间："
+                android:textSize="@dimen/text_size_12"/>
+
+                />
+            <TextView
+                android:id="@+id/tv_play_sum"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="200"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/padding_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="报名人数："
+                android:textSize="@dimen/text_size_12"/>
+
+            <TextView
+                android:id="@+id/tv_reporter_sum"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="200"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/padding_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="历史发布课程数："
+                android:textSize="@dimen/text_size_12"/>
+            <TextView
+                android:id="@+id/tv_his_course_sum"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="111"
+                android:textSize="@dimen/text_size_12"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看详情>>"
+                android:background="@null"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

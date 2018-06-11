@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/header_img_back"></include>
+
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/padding_2"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <!--播放、暂停按钮-->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_pre_video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="@dimen/text_size_14"
+            android:background="@drawable/selector_btn_pre"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btn_play_video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="@dimen/text_size_14"
+            android:background="@drawable/selector_btn_play"
+            />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_pause_video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="@dimen/text_size_14"
+            android:background="@drawable/selector_btn_pause"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btn_next_video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="@dimen/text_size_14"
+            android:background="@drawable/selector_btn_next"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

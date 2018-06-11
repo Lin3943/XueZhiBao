@@ -1,0 +1,49 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="title">18sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="first">16sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="two">14sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="three">12sp</dimen>
+    <dimen name="four">10sp</dimen>
+    <dimen name="per_text_size">16sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="city_text_size">16sp</dimen>
+    <dimen name="side_letter_bar_letter_size">12sp</dimen>
+    <dimen name="side_letter_bar_width">36dp</dimen>
+    <dimen name="person_margin_left">13dp</dimen>
+    <dimen name="person_margin_right">9dp</dimen>
+    <dimen name="padding_1">1dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="padding_3">3dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_6">6dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="corner_radius">4dp</dimen>
+    <dimen name="layer_padding">0dp</dimen>
+
+</resources>

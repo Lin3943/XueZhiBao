@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+        android:id="@+id/iv_channel_detial"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/icon_logo"
+        />
+
+    <TextView
+        android:id="@+id/tv_channel_detial"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/padding_4"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="@dimen/padding_10"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="第几集"/>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <com.zyl.xuezhibao.widget.ProgressButton
+        android:id="@+id/pb_download"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_8"
+        android:text="缓   存"
+        android:textColor="#ffffff"
+        app:buttonCornerRadius="10dp"
+        app:buttonNormalColor="#b2b0b0"
+        app:buttonPressedColor="#a083d2"
+        app:progressBgColor="#ff80d0"
+        app:progressColor="#c3762d"
+        app:showProgressNum="true"
+        />
+
+</LinearLayout>

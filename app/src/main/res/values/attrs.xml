@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RatingBar">
+        <!--星星间距-->
+        <attr format="dimension" name="starDistance"/>
+        <!--星星大小-->
+        <attr format="dimension" name="starSize"/>
+        <!--星星个数-->
+        <attr format="integer" name="starCount"/>
+        <!--星星空图-->
+        <attr format="reference" name="starEmpty"/>
+        <!--星星满图-->
+        <attr format="reference" name="starFill"/>
+    </declare-styleable>
+
+    <!--自定义带progress按钮-->
+    <declare-styleable name="progressbutton">
+        <attr name="progressColor" format="color" />
+        <attr name="progressBgColor" format="color" />
+        <attr name="buttonNormalColor" format="color" />
+        <attr name="buttonPressedColor" format="color" />
+        <attr name="buttonCornerRadius" format="dimension"/>
+        <attr name="showProgressNum" format="boolean"/>
+    </declare-styleable>
+
+
+</resources>

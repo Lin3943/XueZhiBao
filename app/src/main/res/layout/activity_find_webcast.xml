@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/header_img_back"></include>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:paddingBottom="@dimen/padding_20"
+        android:id="@+id/llt_not_webcast_now"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/mine_inv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textSize="@dimen/text_size_20"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_find_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="网络直播"
+        android:textSize="@dimen/text_size_16"/>
+    <!--智能刷新界面SmartRefreshLayout-->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srlt_find_webcast_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:visibility="visible"
+        app:tr_bottom_height="80dp"
+        app:tr_head_height="50dp">
+
+        <!--频道详细目录-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_find_webcast"
+            android:layout_margin="@dimen/margin_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

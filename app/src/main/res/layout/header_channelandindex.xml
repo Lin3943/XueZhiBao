@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:orientation="vertical"
+    >
+    <!--热门，定位-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/nearby_detail_location"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_6"
+            android:text="热门"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_6"
+            android:background="@drawable/shopcar_down"
+            />
+    </LinearLayout>
+    <!--头像、id、认证-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_margin="@dimen/margin_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/icon_inuyasha"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:paddingLeft="@dimen/padding_6"
+            android:paddingRight="@dimen/padding_6"
+            android:text="Inuyasha"
+            android:textSize="@dimen/text_size_16"
+            />
+        <ImageView
+            android:paddingLeft="@dimen/padding_4"
+            android:paddingTop="@dimen/padding_2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/padding_4"
+            android:background="@drawable/icon_certifies"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+</LinearLayout>

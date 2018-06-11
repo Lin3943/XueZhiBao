@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--我的页面  余额不同行布局-->
+    <item type="id" name="tag_first_earnings"></item>
+    <item type="id" name="tag_second_consume"></item>
+
+    <item name="id_stickynavlayout_topview" type="id"/>
+    <item name="id_stickynavlayout_viewpager" type="id"/>
+    <item name="id_stickynavlayout_indicator" type="id"/>
+    <item name="id_stickynavlayout_innerscrollview" type="id"/>
+
+    <!--<item name="loadmore_status_my" type="id"/>-->
+    <!--<item name="loadmore_progressbar_my" type="id"/>-->
+</resources>

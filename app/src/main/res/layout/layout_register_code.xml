@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/linear_code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/linear_shape"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edit_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="验证码"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:textColorHint="#CBCAD0" />
+        <TextView
+            android:id="@+id/text_get_code"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="获取验证码"
+            android:background="@drawable/tv_shape_phone_code"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/linear_editPsw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/linear_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/linear_shape"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="密码为6-16位数字或字母"
+            android:inputType="textPassword"
+            android:textColorHint="#CBCAD0" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/linear_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/linear_shape"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:text="邀请人:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_inviter_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:textSize="16sp"
+            android:hint="请输入邀请人手机号"
+            android:inputType="phone"
+            android:textColorHint="#CBCAD0" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <Button
+        android:id="@+id/register_btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/linear_editPsw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register_btn_next"
+        android:text="完成注册"
+        android:textColor="#6F490A" />
+</LinearLayout>

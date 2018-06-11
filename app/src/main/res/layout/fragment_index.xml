@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/header_img_back"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!--logo图标、轮播信息-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="@dimen/margin_2"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/icon_logo_blue"/>
+
+                <com.zyl.xuezhibao.widget.UpDownTextView
+                    android:id="@+id/tv_scroll_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/margin_4"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="这是一个轮播公告"
+                    android:textSize="@dimen/text_size_18"
+                    />
+            </LinearLayout>
+            <!--简介、视频缩略图-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_6"
+                    android:gravity="center"
+                    android:text="简介"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_index_abstract"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/margin_4"
+                    android:layout_marginRight="@dimen/margin_4"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:scrollbars="vertical"
+                    android:text="简介内容简介内容简介内容简介内容简介内容
+简介内容简介内容简介内容简介内容简介内容简介内容
+简介内容简介内容简介内容简介内容简介内容简介内容
+简介内容简介内容简介内容简介内容简介内容简介内容
+简介内容简介内容简介内容简介内容简介内容简介内容简介内容"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <com.youth.banner.Banner
+                android:id="@+id/vp_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                />
+
+            <LinearLayout
+                android:padding="@dimen/padding_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_2"
+                android:background="@drawable/greed_shape"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/margin_4"
+                    android:background="@drawable/icon_luffy"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="瑞安中学 · 蔡瑞琛语文名师
+教育硕士，中学高级教师，瑞安市名教师，温州市教坛中坚。曾获浙江省语文学习方式变革研讨会论文评比一等奖，4次获温州市高中语文学科命题竞赛一等奖，有高考语文试题研究论文发表于全国中文核心期刊；多次参与省、市重要考试的命题和高考改卷工作。对教学深有研究，注重知识与方法的结合 ，准确把握考试方向，让学生迅速提分。"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="@dimen/padding_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_2"
+                android:background="@drawable/greed_shape"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/margin_4"
+                    android:background="@drawable/icon_natsu"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="温州中学 · 邵 达数学名师
+高三数学教师，中学高级教师，温州市教坛中坚，骨干教师，全国数学竞赛金牌教练，温州市第二十六届“园丁奖”获得者。 荣获2010温州市高中数学青年教师学科知识竞赛一等奖，2013年全国高中数学联赛全国一等奖指导师，2017年浙江省高中数学竞赛省级一等奖指导师。有丰富的竞赛经验和高考教学经验，对于知识点的把握，重难点的归纳，知识体系的构建，考试考点的动向等都有较深的研究，所教学生在各大比赛中都喜获奖项，考入理想大学。"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="@dimen/padding_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_2"
+                android:background="@drawable/greed_shape"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/margin_4"
+                    android:background="@drawable/icon_inuyasha"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="温州中学 · 冯景奇英语名师
+高三英语教师，教龄10年，中学高级教师，温州市教坛新秀，温州市骨干教师，多次获得温州市高中英语学科命题竞赛一等奖，荣获2016年温州市高中英语优质课评比一等奖。2014-2015年任教于美国亚利桑那州北峡谷高中和韦斯特维德初中。英语口语功底深厚，有纯正的发音和极好的语感、节奏感，对英语独特的领悟学习方式激发每一个学生的潜能和学习兴趣，让每个高考学生能顺畅发挥潜能获得成功！"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
